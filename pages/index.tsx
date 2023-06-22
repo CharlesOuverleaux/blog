@@ -4,6 +4,7 @@ import Title from "../components/data-display/Title/Title";
 import BlogImage from "../components/data-display/BlogImage/BlogImage";
 import Content from "../components/data-display/Content/Content";
 import Button from "../components/input-and-actions/Button/Button";
+import { trackEvent, trackPageview } from "../helpers/analytics-api";
 
 const title = "Check out the Blinkist app";
 const image = {
@@ -17,6 +18,7 @@ const content =
 const ctaText = "Sign up";
 
 const Home: NextPage = () => {
+  trackPageview("Home");
   return (
     <div>
       <Head>
@@ -28,7 +30,7 @@ const Home: NextPage = () => {
         <Title title={title} />
         <BlogImage image={image} />
         <Content content={content} />
-        <Button ctaText="Sign Up" onClick={() => alert("Clicked")} />
+        <Button ctaText={ctaText} onClick={() => trackEvent("sign up")} />
       </main>
     </div>
   );
