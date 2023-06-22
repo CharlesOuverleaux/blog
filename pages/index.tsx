@@ -1,5 +1,9 @@
 import { NextPage } from "next";
 import Head from "next/head";
+import Title from "../components/data-display/Title/Title";
+import BlogImage from "../components/data-display/BlogImage/BlogImage";
+import Content from "../components/data-display/Content/Content";
+import Button from "../components/input-and-actions/Button/Button";
 
 const Home: NextPage = () => {
   return (
@@ -9,14 +13,12 @@ const Home: NextPage = () => {
         <meta name="description" content="Blinkist blog" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
       <main>
-        <h1 className="text-7xl">
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+        <Title />
+        <BlogImage />
+        <Content />
+        <Button />
       </main>
-
-      <footer></footer>
     </div>
   );
 };
