@@ -5,6 +5,8 @@ import BlogImage from "../components/data-display/BlogImage/BlogImage";
 import Content from "../components/data-display/Content/Content";
 import Button from "../components/input-and-actions/Button/Button";
 
+const title = "Check out the Blinkist app";
+
 const Home: NextPage = () => {
   return (
     <div>
@@ -14,7 +16,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <Title />
+        <Title title={title} />
         <BlogImage />
         <Content />
         <Button />

@@ -1,7 +1,11 @@
 import React, { FC } from "react";
 
-const Title: FC = () => {
-  return <div>Title</div>;
+interface TitleProps {
+  title: string;
+}
+
+const Title: FC<TitleProps> = ({ title }) => {
+  return <h1 className="text-4xl">{title}</h1>;
 };
 
 export default Title;
