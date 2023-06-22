@@ -6,6 +6,15 @@ import Content from "../components/data-display/Content/Content";
 import Button from "../components/input-and-actions/Button/Button";
 
 const title = "Check out the Blinkist app";
+const image = {
+  src: "/hero.jpeg",
+  alt: "Blinkist app",
+};
+
+const content =
+  "Meet the app that revolutionized reading. Meet the app that has 18 million users. Thanks a lot for reading the article!";
+
+const ctaText = "Sign up";
 
 const Home: NextPage = () => {
   return (
@@ -17,9 +26,9 @@ const Home: NextPage = () => {
       </Head>
       <main>
         <Title title={title} />
-        <BlogImage />
-        <Content />
-        <Button />
+        <BlogImage image={image} />
+        <Content content={content} />
+        <Button ctaText="Sign Up" onClick={() => alert("Clicked")} />
       </main>
     </div>
   );

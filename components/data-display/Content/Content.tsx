@@ -1,7 +1,11 @@
-import React from "react";
+import React, { FC } from "react";
 
-const Content = () => {
-  return <div>Content</div>;
+interface ContentProps {
+  content: string;
+}
+
+const Content: FC<ContentProps> = ({ content }) => {
+  return <p className="text-[#052330]">{content}</p>;
 };
 
 export default Content;
