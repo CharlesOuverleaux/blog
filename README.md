@@ -58,7 +58,7 @@ e.g. In this case we would roll out Variation B
 ![AB_Test](./public/ABTest.png) 
 
 ## Demo 
-![AB_Test_Demo](./public/Demo.mp4) 
+[Demo](https://www.loom.com/share/fee6c5553dee466c9dfda662295ee499?sid=682f47f8-74ce-4f45-9138-1d5785fbf78c)
 
 ## Learn More
 
