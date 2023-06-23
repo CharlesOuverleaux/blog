@@ -25,7 +25,7 @@ The `pages/api` directory is mapped to `/api/*`. Files in this directory are tre
 - - Employ AB-testing to learn which content formats work and which don’t.
 - - Empower content editors to launch AB tests without engineering support.
 
-## Acceptance criteria 
+## Acceptance criterias 
 
 - Visitor sees only one variation (assigned randomly) when they land on the page.
 - The assigned variation doesn’t change after the page reloads.
