@@ -57,6 +57,9 @@ e.g. In this case we would roll out Variation B
 
 ![AB_Test](./public/ABTest.png) 
 
+## Demo 
+![AB_Test_Demo](./public/Demo.mp4) 
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
