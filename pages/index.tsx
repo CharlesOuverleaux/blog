@@ -8,15 +8,8 @@ import { trackEvent, trackPageview } from "../helpers/analytics-api";
 import { useCookies } from "react-cookie";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
-
-const title = "Check out the Blinkist app";
-const image = {
-  src: "/hero.jpeg",
-  alt: "Blinkist app",
-};
-
-const content =
-  "Meet the app that revolutionized reading. Meet the app that has 18 million users. Thanks a lot for reading the article!";
+import { getCtaText } from "../helpers/getCtaText";
+import blogData from "../data/blogData.json";
 
 const Home: NextPage = () => {
   const router = useRouter();
@@ -59,15 +52,8 @@ const Home: NextPage = () => {
     );
   };
 
-  const testContent = {
-    "variation-A": "Sign up now",
-    "variation-B": "Sign up for free",
-    default: "Sign up",
-  };
-
-  const ctaText = isSignedUp
-    ? "Thank you for signing up"
-    : testContent[variation as string] || testContent["default"];
+  const { title, image, content } = blogData;
+  const ctaText = getCtaText(isSignedUp, variation);
 
   return (
     <div>

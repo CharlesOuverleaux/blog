@@ -1,0 +1,13 @@
+{
+    "title": "Check out the Blinkist app",
+    "image":{
+        "src": "/hero.jpeg",
+        "alt": "Blinkist app"
+    },
+    "content": "Meet the app that revolutionized reading. Meet the app that has 18 million users. Thanks a lot for reading the article!",
+    "testContent": {
+        "variation-A": "Sign up now",
+        "variation-B": "Sign up for free",
+        "default": "Sign up"
+      }
+}
